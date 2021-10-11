@@ -1,0 +1,360 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+/*#primero {
+    font-size: 30px;
+}*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* se lo tenemos que dar al elemento que contenga los elementos que van a estar uno al lado del otro*/
+    font-weight: bold;
+}
+    
+
+.lista {
+    display: flex;
+}
+
+.titular {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1{
+    font-size: 60px;
+    margin:0;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+a{
+    font-size: 14px;
+    background: #5cb8ff;
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.sobremia {
+    background: none;
+    color: midnightblue;
+}
+
+header  {
+    background: url(/assets/robot.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.contenedor{
+    max-width: 1280px;
+    margin: auto;
+    width: 90%;
+    color: midnightblue;
+    opacity: 1;
+}
+
+/*SOBRE MI */
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+    color: midnightblue;
+}
+
+.contenedor_sobremi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /*pone los elementos a la misma altura verticalmente*/
+
+}
+
+.parrafo_boton {
+    width: 42%;
+}
+
+.parrafo_boton p {
+    font-size: 18px;
+}
+
+.parrafo_final {
+    margin-bottom: 30px;
+}
+
+.contenedor_servicios {
+    display: flex;
+    flex-wrap: wrap; /*pone los elementos en varias líneas*/
+    justify-content: space-around; /*separar los bloques de los cursos*/
+}
+
+.servicio {
+    width: 25%;
+    padding: 50px 38px 50px 38px; /*el padding suma al ancho*/
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.violeta{
+    background: #5055df;
+}
+
+.celeste{
+    background: #40a8fa;
+}
+
+.servicio h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio img {
+    float: right;
+}
+
+.servicio p {
+    font-size: 18px;
+    height: 200px;
+}
+
+/*Estilo Flechas Slider*/
+
+span {
+    font-size: 80px;
+    color: #5055df;
+}
+
+.owl-nav {
+    text-align: center;
+}
+
+/*Por qué trabajar conmigo*/
+
+.contenedor-porque {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.contenedor-porque h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.contenedor-porque p { 
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.porque-singular {
+    width: 28%;
+}
+
+/* blog */
+
+#blog {
+    background: #f9fafc;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contenedor-publicaciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicacion {
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+    padding-bottom: 20px;
+}
+
+#blog img{
+    width: 100%;
+}
+
+#blog h4{
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;
+}
+
+#blog p {
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+}
+
+#blog a {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.publicacion-segunda img{
+    height: 258px;
+}
+
+.primer-parrafo{
+    padding: 0 20px 20px 20px !important;
+}
+
+/*que esperas*/
+
+#que-esperas {
+    background: linear-gradient(rgba(84, 93, 220, .94), rgba(96, 171, 245, .9));
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+#que-esperas h3 {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#que-esperas a {
+    padding: 15px 45px 15px 45px;
+    transition: 1s;
+}
+
+#que-esperas a:hover {
+    color: black;
+    transition: 1s;
+    transform: scale(1.1); /*agrandar elemento*/
+    display: inline-block; /*se debe poner porque es un elemento en línea*/
+}
+
+/*whatsapp*/
+
+#whatsapp a {
+    background: none; /*Le quitamos el fondo que ya tenía el elemento*/
+    position: fixed;/*poner botón fijo - posición fija*/
+    top: 85%;/*En qué posicion va a estar el elemento, en este caso al 85% de alto*/
+    right: 1%; /*El botón al 1% de la pantalla*/
+}
+
+.menu-icon {
+    display: none;
+}
+
+footer {
+    border-style: outset;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    
+   nav {
+       position: absolute;
+       top: 70px;
+       left: 0px;
+       background: #5cb8ff;
+       width: 100%;
+       display: none;
+   }
+
+   nav .lista {
+       flex-direction: column;
+       display: flex;
+   }
+
+   .menu-icon {
+       display: block;
+       width: 25px;
+     }
+
+    .titular {
+        margin-top: 179px;
+    }
+
+    h1 {
+        font-size: 49px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .contenedor_sobremi {
+        flex-direction: column; /*Pone los elementos en columna en responsive*/
+    }
+
+    .parrafo_boton {
+        width: 90%;
+    }
+
+    .contenedor_servicios {
+        flex-direction: column;
+    }
+
+    .servicio {
+        width: 72%;
+        margin: auto;/*Para centrar elemento ya que width lo pone siempre a la izquierda por defecto*/
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 46px;
+    }
+
+    .contenedor-porque {
+        flex-direction: column;
+    }
+
+    .porque-singular {
+        width: 95%;
+    }
+
+    .contenedor-publicaciones {
+        flex-direction: column;
+    }
+
+    .publicacion {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .imagen-sobremi {
+        width: 90%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+    header {
+        height: 53vh;
+    }
+
+    .imagen-sobremi {
+        width: 50%;
+    }
+
+    .servicio {
+        width: 44%;
+    }
+
+    .publicacion {
+        width: 62%;
+    }
+}
